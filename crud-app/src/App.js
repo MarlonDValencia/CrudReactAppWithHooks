@@ -4,6 +4,12 @@ import UserTable from './components/UserTable';
 import {v4 as uuidv4} from 'uuid';
 import AddUserForm from './components/AddUserForm';
 import EditUserForm from './components/EditUserForm';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   var userData = [
@@ -56,6 +62,7 @@ function App() {
     <>
     <div className="container">
       <h1>CRUD App with hooks</h1>
+      <hr/>
       <div className="flex-row">
         <div className="flex-large">
           {editing ? (
